@@ -1,7 +1,6 @@
-
 import java.io.File;
 
-String path = "C:\\dev\\workspace\\itdevsoa\\aidx-gateway-services\\trunk\\services-ear";
+String path = "C:\\temp";
 // Create a ref for closure
 def checkSVN
 def delAll
