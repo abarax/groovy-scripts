@@ -1,7 +1,6 @@
-
 import org.mozilla.universalchardet.UniversalDetector;
 
-    def dir = new File('C:\\SOA\\design\\wsc\\src\\main\\resources\\service\\partner\\common');
+    def dir = new File('C:\\temp');
     String fileName = "";
      
     dir.traverse {
