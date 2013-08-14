@@ -1,5 +1,5 @@
-
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Vertex
@@ -135,3 +135,19 @@ def printMatrix(int [][] matrix, int Count)
 }
 
 printMatrix(adj, 8)
+
+// Can be used for topological sort.
+def DFS(seen, startVertex) {
+ 
+ startVertex.edges.each {
+     DFS(seen, it.child)
+ }
+ 
+ if (seen.add(startVertex))
+     println startVertex.name
+
+}
+
+
+DFS(new HashSet(), a)
+
